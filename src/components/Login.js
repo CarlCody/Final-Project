@@ -1,4 +1,3 @@
-//Client side
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -85,7 +84,6 @@ export default class Login extends React.Component {
                     <button className="btn btn-success btn-block">Login</button>
                     <Link className="btn btn-primary btn-block" to="/register">Register</Link>
                     
-                    
                     <div className="container">
                         <h1>Create Account</h1>
                         {this.state.showAlert ?
@@ -123,8 +121,8 @@ export default class Login extends React.Component {
                                     value={this.state.password} />
                             </div>
                             <button className="btn btn-success btn-block">Register</button>
-                            <Link className="btn btn-primary btn-block" to="/register">Cancel</Link>
+                            <Link className="btn btn-primary btn-block" to="/subscribe">Cancel</Link>
                         </form>
                     </div>
-               )
-               } 
+                    )
+                }

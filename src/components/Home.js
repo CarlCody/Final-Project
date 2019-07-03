@@ -5,10 +5,11 @@ export default class  extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Hello from js</h1>
+                <h1>Buyer Home Page js</h1>
                 <p>Welcome to cody and jbs auction house</p>
                 <Link to='/about'>Go to About Page</Link>
             </div>
+            
         )
     }
 }
