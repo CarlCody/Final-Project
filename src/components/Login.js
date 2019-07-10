@@ -55,74 +55,79 @@ export default class Login extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <h1>Login</h1>
-                {this.state.showAlert ?
-                    (<div className="alert alert-danger">Your username and password doesn't match our records</div>) : null
-                }
-                <form onSubmit={this.onSubmit}/>
-                    <div className="form-group">
-                        <label htmlFor="username">Username</label>
-                        <input placeholder="Enter your Name"
-                            className="form-control"
-                            type="text"
-                            name="username"
-                            id="username"
-                            onChange={this.onChange}
-                            value={this.state.username} />
+          <div>
+            <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Home</a>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <h1>Login or Create Account</h1>
+                    <form>
+                        <div class="form-group">
+                         <span class="border border-dark">
+                                <label for="username">Username</label>
+                                <input placeholder="Enter your UserName" class="form-control border-dark" type="text" name="username"
+                                    id="username"/>
+                        </div>
+                        <div class="form-group">
+                             <span class="border border-warning"> <label for="password">Password</label>
+                                <input placeholder="Enter your password" type="password" class="form-control border-warning" id="password"
+                                    name="password"/>
+                            </span>
+                        </div>
+                        <a class="btn btn-dark btn-block" href="profile.html">Login</a>
+                        <a class="btn btn-warning btn-block" href="register.html">Register</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container">
+                    <h1>Create Account</h1>
+                    <form>
+                        <span>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input placeholder="Enter your Name" class="form-control border-dark" type="text" name="username"
+                                id="username"/>
+                        </div>
+                    </span>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input placeholder="Enter your password" type="password" class="form-control border-warning" id="password"
+                                name="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="verify password"> Verify Password</label>
+                            <input placeholder="Please verify your password" type="password" class="form-control border-dark"
+                                id="password" name="password"/>
+                        </div>
+                        <a class="btn btn-warning btn-block" href="profile.html">Register</a>
+                        <a class="btn btn-dark btn-block" href="login.html">Cancel</a>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="card text-center fixed-bottom">
+                    <div class="card-header border border-dark">
+                        Featured
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Password</label>
-                        <input placeholder="Enter your password"
-                            type="text"
-                            className="form-control"
-                            id="password"
-                            name="password"
-                            onChange={this.onChange}
-                            value={this.state.password} />
+                    <div class="card-body border border-warning">
+                        <h5 class="card-title">Please consider subscribing also.</h5>
+                        <p class="card-text">Click Button Below To Subscribe!</p>
+                        <a href="#" class="btn btn-dark">To Subscription Page</a>
                     </div>
-                    <button className="btn btn-success btn-block">Login</button>
-                    <Link className="btn btn-primary btn-block" to="/register">Register</Link>
-                    
-                    <div className="container">
-                        <h1>Create Account</h1>
-                        {this.state.showAlert ?
-                            (<div className="alert alert-danger">Your username and password doesn't match our records</div>) : null
-                        }
-                        <form onSubmit={this.onSubmit}>
-                            <div className="form-group">
-                                <label htmlFor="username">Enter your Name</label>
-                                <input placeholder="Enter your Name"
-                                    className="form-control"
-                                    type="text"
-                                    name="username"
-                                    id="username"
-                                    onChange={this.onChange}
-                                    value={this.state.username} />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
-                                <input placeholder="Enter your password"
-                                    type="text"
-                                    className="form-control"
-                                    id="password"
-                                    name="password"
-                                    onChange={this.onChange}
-                                    value={this.state.password} />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="password">Verify Password</label>
-                                <input placeholder="Please verify your password"
-                                    type="text"
-                                    className="form-control"
-                                    id="password"
-                                    name="password"
-                                    onChange={this.onChange}
-                                    value={this.state.password} />
-                            </div>
-                            <button className="btn btn-success btn-block">Register</button>
-                            <Link className="btn btn-primary btn-block" to="/subscribe">Cancel</Link>
-                        </form>
+                    <div class="card-footer text-muted">
+                        2 days ago
                     </div>
+                </div>
+            </footer> 
+            </div>
                     )
                 }
