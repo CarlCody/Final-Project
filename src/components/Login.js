@@ -56,78 +56,73 @@ export default class Login extends React.Component {
     render() {
         return (
           <div>
-            <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Home</a>
+            <nav className="navbar navbar-dark bg-dark">
+            <a className="navbar-brand" href="#">Home</a>
         </nav>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-6">
-                <div class="container">
+        
+        <div className="row">
+            <div className="col-6">
+                <div className="container">
                     <h1>Login or Create Account</h1>
                     <form>
-                        <div class="form-group">
-                         <span class="border border-dark">
-                                <label for="username">Username</label>
-                                <input placeholder="Enter your UserName" class="form-control border-dark" type="text" name="username"
+                        <div className="form-group">
+                         <span className="border border-dark">
+                                <label htmlFor="username">Username</label>
+                                <input placeholder="Enter your UserName" className="form-control border-dark" type="text" name="username"
                                     id="username"/>
                         </div>
-                        <div class="form-group">
-                             <span class="border border-warning"> <label for="password">Password</label>
-                                <input placeholder="Enter your password" type="password" class="form-control border-warning" id="password"
+                        <div className="form-group">
+                             <span className="border border-warning"> <label htmlFor="password">Password</label>
+                                <input placeholder="Enter your password" type="password" className="form-control border-warning" id="password"
                                     name="password"/>
                             </span>
                         </div>
-                        <a class="btn btn-dark btn-block" href="profile.html">Login</a>
-                        <a class="btn btn-warning btn-block" href="register.html">Register</a>
+                        <a className="btn btn-dark btn-block" href="profile.html">Login</a>
+                        <a className="btn btn-warning btn-block" href="register.html">Register</a>
                     </form>
-                </div>
             </div>
-            <div class="col-6">
-                <div class="container">
+            <div className="col-6">
+                <div className="container">
                     <h1>Create Account</h1>
                     <form>
                         <span>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input placeholder="Enter your Name" class="form-control border-dark" type="text" name="username"
+                        <div className="form-group">
+                            <label htmlFor="username">Username</label>
+                            <input placeholder="Enter your Name" className="form-control border-dark" type="text" name="username"
                                 id="username"/>
                         </div>
                     </span>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input placeholder="Enter your password" type="password" class="form-control border-warning" id="password"
+                        <div className="form-group">
+                            <label htmlFor="password">Password</label>
+                            <input placeholder="Enter your password" type="password" className="form-control border-warning" id="password"
                                 name="password"/>
                         </div>
-                        <div class="form-group">
-                            <label for="verify password"> Verify Password</label>
-                            <input placeholder="Please verify your password" type="password" class="form-control border-dark"
+                        <div className="form-group">
+                            <label htmlFor="verify password"> Verify Password</label>
+                            <input placeholder="Please verify your password" type="password" className="form-control border-dark"
                                 id="password" name="password"/>
                         </div>
-                        <a class="btn btn-warning btn-block" href="profile.html">Register</a>
-                        <a class="btn btn-dark btn-block" href="login.html">Cancel</a>
+                        <a className="btn btn-warning btn-block" href="profile.html">Register</a>
+                        <a className="btn btn-dark btn-block" href="login.html">Cancel</a>
                     </form>
                 </div>
             </div>
             <footer>
-                <div class="card text-center fixed-bottom">
-                    <div class="card-header border border-dark">
+                <div className="card text-center fixed-bottom">
+                    <div className="card-header border border-dark">
                         Featured
                     </div>
-                    <div class="card-body border border-warning">
-                        <h5 class="card-title">Please consider subscribing also.</h5>
-                        <p class="card-text">Click Button Below To Subscribe!</p>
-                        <a href="#" class="btn btn-dark">To Subscription Page</a>
+                    <div className="card-body border border-warning">
+                        <h5 className="card-title">Please consider subscribing also.</h5>
+                        <p className="card-text">Click Button Below To Subscribe!</p>
+                        <a href="#" className="btn btn-dark">To Subscription Page</a>
                     </div>
-                    <div class="card-footer text-muted">
+                    <div className="card-footer text-muted">
                         2 days ago
                     </div>
                 </div>
             </footer> 
-            </div>
+        
                     )
-                }
+                    }
+            </div>
