@@ -8,23 +8,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>navbar or title?</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-bottom">
+    
+    <div id="bookmarks"></div>
+    <footer class="fixed-bottom mb-2 text-center">&copy: 2019 Bookmarker</footer>
+    <!-- </div> -->
+    <script src="main.js"></script>
+    <h1>Cody_FamilyAuctionHouse</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <a class="navbar-brand" href="#">Hello Carl</a>
+        <a class="navbar-brand">Looking for something specific...</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-       
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -56,7 +75,14 @@
             </form>
         </div>
     </nav>
-</body>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Home</a><a href="">Saved</a><a href="">Collectables & Art</a><a href="">Home &
+            Garden</a><a href="">Silver & Gold</a>
+    </nav>
+<!-- </body> -->
 <br>
 <h2><span class="text-warning">Buy</span> It Now Items</h2>
 <br>
@@ -129,10 +155,14 @@
         </a>
     </div>
     <li class="list-group-horizontal">
-        <img src="https://justinteeantiques.com/wp-content/uploads/2018/11/massive-sterling-silver-jewellery-box-1.jpg"
-            alt="..." class="img-thumbnail w-50">
+        <!-- <img src="https://historicalantiquesandcoins.com/wp-content/uploads/2017/08/q1-1.jpg"
+            class="rounded float-right w-50" alt="...">
         <img src="https://foremansrarecoins.com/wp-content/uploads/2018/05/b847ab9cbb4bc46a569f48a23a13d5bb-150x149.jpg"
             alt="..." class="img-thumbnail w-50">
+        <img src="https://justinteeantiques.com/wp-content/uploads/2018/11/massive-sterling-silver-jewellery-box-1.jpg"
+            alt="..." class="img-thumbnail w-50"> -->
+        <!-- <img src="https://foremansrarecoins.com/wp-content/uploads/2018/05/b847ab9cbb4bc46a569f48a23a13d5bb-150x149.jpg"
+            alt="..." class="img-thumbnail w-50"> -->
         <img src="https://foremansrarecoins.com/wp-content/uploads/2018/09/IMG_2382-150x150.jpg"
             class="rounded float-left w-50" alt="...">
         <img src="https://www.umicore.de/storage/regiode/sized/pmm-7-max-600x0.jpg?1531190599"
@@ -141,16 +171,13 @@
             class="rounded float-left w-50" alt="...">
         <img src="https://steemitimages.com/640x0/https://steemitimages.com/DQmRiUu6WLHf6xhtNMovnwHF6t1CFX5bPdN2MLbr9LkQnCx/4.jpeg"
             class="rounded float-right w-50" alt="...">
-            <img src="https://steemitimages.com/640x0/https://steemitimages.com/DQmRiUu6WLHf6xhtNMovnwHF6t1CFX5bPdN2MLbr9LkQnCx/4.jpeg"
+        <img src="https://historicalantiquesandcoins.com/wp-content/uploads/2017/08/q1-1.jpg"
             class="rounded float-right w-50" alt="...">
     </li>
-   
-    <span class="fixed-top">
-    <nav class="navbar navbar-light bg-dark">
-        <a class="navbar-brand" href="#">Home</a><a href="">Saved</a><a href="">Collectables & Art</a><a href="">Home &
-            Garden</a><a href="">Silver & Gold</a>
-    </nav>
-</span>
+
+
+
+
 
 
 </html>
