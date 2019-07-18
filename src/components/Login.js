@@ -55,74 +55,70 @@ export default class Login extends React.Component {
 
     render() {
         return (
-          <div>
-            <nav className="navbar navbar-dark bg-dark">
-            <a className="navbar-brand" href="#">Home</a>
-        </nav>
-        
-        <div className="row">
-            <div className="col-6">
-                <div className="container">
-                    <h1>Login or Create Account</h1>
-                    <form>
-                        <div className="form-group">
-                         <span className="border border-dark">
-                                <label htmlFor="username">Username</label>
-                                <input placeholder="Enter your UserName" className="form-control border-dark" type="text" name="username"
-                                    id="username"/>
+            <div>
+                <nav classname="navbar navbar-dark bg-dark">
+                    <a classname="navbar-brand" href="#">Home</a>
+                </nav>
+                <div classname="row">
+                    <div classname="col-6">
+                        <div classname="container">
+                            <h1>Login or Create Account</h1>
+                            <form>
+                                <div classname="form-group">
+                                    <span classname="border border-dark">
+                                        <label htmlfor="username">Username</label>
+                                        <input placeholder="Enter your UserName" classname="form-control border-dark" type="text" name="username" id="username" />
+                                    </span></div>
+                                <div classname="form-group">
+                                    <span classname="border border-warning"> <label htmlfor="password">Password</label>
+                                        <input placeholder="Enter your password" type="password" classname="form-control border-warning" id="password" name="password" />
+                                    </span>
+                                </div>
+                                <a classname="btn btn-dark btn-block" href="profile.html">Login</a>
+                                <a classname="btn btn-warning btn-block" href="register.html">Register</a>
+                            </form>
                         </div>
-                        <div className="form-group">
-                             <span className="border border-warning"> <label htmlFor="password">Password</label>
-                                <input placeholder="Enter your password" type="password" className="form-control border-warning" id="password"
-                                    name="password"/>
-                            </span>
+                        <div classname="col-6">
+                            <div classname="container">
+                                <h1>Create Account</h1>
+                                <form>
+                                    <span>
+                                        <div classname="form-group">
+                                            <label htmlfor="username">Username</label>
+                                            <input placeholder="Enter your Name" classname="form-control border-dark" type="text" name="username" id="username" />
+                                        </div>
+                                    </span>
+                                    <div classname="form-group">
+                                        <label htmlfor="password">Password</label>
+                                        <input placeholder="Enter your password" type="password" classname="form-control border-warning" id="password" name="password" />
+                                    </div>
+                                    <div classname="form-group">
+                                        <label htmlfor="verify password"> Verify Password</label>
+                                        <input placeholder="Please verify your password" type="password" classname="form-control border-dark" id="password" name="password" />
+                                    </div>
+                                    <a classname="btn btn-warning btn-block" href="profile.html">Register</a>
+                                    <a classname="btn btn-dark btn-block" href="login.html">Cancel</a>
+                                </form>
+                            </div>
                         </div>
-                        <a className="btn btn-dark btn-block" href="profile.html">Login</a>
-                        <a className="btn btn-warning btn-block" href="register.html">Register</a>
-                    </form>
-            </div>
-            <div className="col-6">
-                <div className="container">
-                    <h1>Create Account</h1>
-                    <form>
-                        <span>
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
-                            <input placeholder="Enter your Name" className="form-control border-dark" type="text" name="username"
-                                id="username"/>
-                        </div>
-                    </span>
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input placeholder="Enter your password" type="password" className="form-control border-warning" id="password"
-                                name="password"/>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="verify password"> Verify Password</label>
-                            <input placeholder="Please verify your password" type="password" className="form-control border-dark"
-                                id="password" name="password"/>
-                        </div>
-                        <a className="btn btn-warning btn-block" href="profile.html">Register</a>
-                        <a className="btn btn-dark btn-block" href="login.html">Cancel</a>
-                    </form>
-                </div>
-            </div>
-            <footer>
-                <div className="card text-center fixed-bottom">
-                    <div className="card-header border border-dark">
-                        Featured
-                    </div>
-                    <div className="card-body border border-warning">
-                        <h5 className="card-title">Please consider subscribing also.</h5>
-                        <p className="card-text">Click Button Below To Subscribe!</p>
-                        <a href="#" className="btn btn-dark">To Subscription Page</a>
-                    </div>
-                    <div className="card-footer text-muted">
-                        2 days ago
-                    </div>
-                </div>
-            </footer> 
-        
-                    )
-                    }
-            </div>
+                        <footer>
+                            <div classname="card text-center fixed-bottom">
+                                <div classname="card-header border border-dark">
+                                    Featured
+          </div>
+                                <div classname="card-body border border-warning">
+                                    <h5 classname="card-title">Please consider subscribing also.</h5>
+                                    <p classname="card-text">Click Button Below To Subscribe!</p>
+                                    <a href="#" classname="btn btn-dark">To Subscription Page</a>
+                                </div>
+                                <div classname="card-footer text-muted">
+                                    2 days ago
+          </div>
+                            </div>
+                        </footer>
+                    </div></div></div>
+
+
+        )
+    }
+
